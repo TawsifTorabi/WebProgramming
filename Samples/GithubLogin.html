@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Github</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" href="favicon.png">
+  <style>
+    body{
+    	background-color: #0d1117;
+      	color: white;
+      	font-family: Trebuchet MS;
+    }
+    #logoImage{
+    	width: 80px;
+    }
+    #headerSection{
+    	text-align: center;
+    }
+
+    #formCard{
+    	background-color: #21262d;
+        width: 340px;
+    	margin: 0 auto;
+      	border-radius: 10px;
+      	border: 1px solid grey;
+      	padding: 20px;
+    }
+    #signupCard{
+    	background-color: transparent;
+        width: 340px;
+    	margin: 0 auto;
+      	border-radius: 10px;
+      	border: 1px solid grey;
+      	padding: 20px;
+      	text-align: center;
+    }
+    .inputBox{
+    	background-color: #0d1117;
+        width: 95%;
+      	border-radius: 10px;
+      	border: 1px solid grey;
+      	padding: 10px;
+      	margin: 8px auto 0 auto;
+     	color: white;
+    }
+    .title{
+    	font-weight: 100;
+    }
+    .forgotPass{
+    	float: right;
+      	color: #2f81ce;
+    }
+    .createAcc{
+      	color: #2f81ce;
+    }
+    
+    #signIn{
+    	background-color: #26a641;
+        width: 100%;
+     	color: white;
+      	padding: 10px;
+      	border-radius: 10px;
+     	font-weight: bold;
+      	border: none;
+      	box-shadow: -2px 8px 13px 0px rgb(0 0 0 / 9%);
+	}
+    
+    #bottomLinks{
+      	text-align: center;
+    }
+    .bottomUrls{
+    	padding: 7px;
+     	color: #2f81ce;
+    }
+    .bottomUrls2{
+    	padding: 7px;
+     	color: grey;
+    }
+    .navbarul{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-left: 0;
+    }
+    .navbarul > li{
+    	display: flex;
+    }
+  </style>
+</head>
+<body>
+ 	<section id="headerSection">
+   	 	<img id="logoImage" src="https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg"/>
+       	<h2 class="title">Sign in to Github</h2>
+  	</section>
+    <section id="formSection">
+		<div id="formCard">
+            Username or Email Address
+            <br>
+            <input type="text" class="inputBox"/>
+            <br><br>
+            Password
+            <span class="forgotPass">Forgot Password?</span>
+            <br>
+            <input type="password" class="inputBox"/>
+          	<br><br>
+         	<button id="signIn">Sign in</button>
+      	</div>
+      <br>
+      <div id="signupCard">
+        New to GitHub?
+        <span class="createAcc">Forgot Password?</span>
+      </div>
+      <br>
+      <!--div id="bottomLinks">
+        <span class="bottomUrls">Terms</span>
+        <span class="bottomUrls">Privacy</span>
+        <span class="bottomUrls">Security</span>
+        <span class="bottomUrls2">Contact Github</span>
+      </div-->
+      <br>
+      <div id="bottomLinks">
+        <ul class="navbarul">
+          <li><span class="bottomUrls">Terms</span></li>
+          <li><span class="bottomUrls">Privacy</span></li>
+          <li><span class="bottomUrls">Security</span></li>
+          <li> <span class="bottomUrls2">Contact Github</span></li>
+        </ul>
+      </div>
+      
+  	</section>
+</body>
+</html>
