@@ -1,0 +1,193 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  html{
+  	margin: 0;
+  }
+  
+  body{
+  	margin: 0;
+    font-family: Trebuchet MS;
+  }
+  
+  #nav{
+  	display: flex;
+    justify-content: space-between;
+    background: white;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  #logo{
+    color: white;
+    background-color: skyblue;
+    padding: 20px;
+    margin-left: 20px;
+    display: block;
+    font-size: 20px
+  }
+  ul{
+  	display: flow-root;
+    list-style: none;   
+  } 
+   
+  @media(min-width: 700px){
+    ul{ 
+  		display: flex;
+   	 	list-style: none;   
+  	}
+  } 
+  ul>li{
+  	margin-right: 0.04rem;
+  }
+  ul>li>a{
+    text-decoration: none;
+    color: rgb(117, 117, 117);
+    background-color: white;
+    padding-right: 10px;
+    transition: 1s;
+    font-size: 11px;
+    
+  }
+  ul>li>a:hover{
+    color: white;
+    transition: 1s;
+  }
+  
+  #logo_image{
+  	width: 200px;
+    margin-left: 20px;
+  }
+  .searchbar{
+  	float: right;
+	vertical-align: middle;
+    margin-top: 37px;
+    margin-right: 35px;
+  }
+  .searchbox{
+  	border: 2px solid orange;
+    padding: 10px;
+  }
+  .searchbutton{
+  	border: 2px solid orange;
+    padding: 10px;
+    color: white;
+    background: orange;
+  }
+  .linked-input{
+    padding: 10px;
+    width: 100%;
+  }
+  .linkedin-title{
+    font-family: Trebuchet MS;
+    color: #626262;
+  }
+  #container {
+    border-radius: 8px;
+    box-shadow: 1px 1px 17px 0px #00000063;
+    display: block;
+    width: 350px;
+    padding: 40px;
+    margin: 0 auto;
+  }
+  .agreement{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .blue{
+    color: #4c64bb;
+    font-weight: bold;
+  }
+  .submitter {
+    font-size: 25px;
+    color: white;
+    background: #4968ae;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 40px;
+}
+.submitterGoogle {
+    font-size: 18px;
+    color: grey;
+    background: transparent;
+    width: 100%;
+    padding: 14px;
+    border: 1px solid grey;
+    border-radius: 40px;
+}
+.flex{
+    display: flex;
+}
+.box{
+    display: block;
+}
+  .customHR{
+    border-bottom: 1px solid #bababa;
+    width: 40%;
+    display: inline-block;
+    margin: 0 auto;
+  	text-align: center;
+  }
+  .orText{
+  	margin-top: 5px;
+    color: #bababa;
+  }
+</style>
+<body>
+  <div>
+      <img id="logo_image" src="https://1000marcas.net/wp-content/uploads/2020/01/Logo-Linkedin.png"/>
+  </div>
+
+    <section id="container">
+        <h2 class="linkedin-title">Join LinkedIn</h2>
+        <input type="text" placeholder="Email" class="linked-input"/>
+        <br>
+        <br>
+        <input type="password" placeholder="Password (8+ Charecter)" class="linked-input"/>
+        <br>
+        <br>
+        <span class="agreement">By Clickling Agree and Join, you agree to the Linkedin <span class="blue">user agreement</span>,<span class="blue">Privacy Policy</span>, and <span class="blue">Cookie Policy</span></span>
+        <br>
+        <br>
+        <button class="submitter">Agree & Join</button>
+      	<br>
+        <div class="flex">
+          <span class="customHR"></span>
+          <span class="orText">or</span>
+          <span class="customHR"></span>
+        </div>
+     	<br>
+     	<button class="submitterGoogle"><img src="https://th.bing.com/th/id/R.55d3560e93ba6e8e604f43b0a089c3c3?rik=ZsCpRaVUmCIpLQ&pid=ImgRaw&r=0" style="height: 28px; vertical-align: middle; margin-bottom: 4px; margin-right: 12px"/> Continue with Google</button>
+      <br>
+      <br>
+      <center>Already in LinkedIn? <a class="blue">Sign In</a></center>
+  </section>
+
+ 
+  <br><br>
+  <nav id="nav">
+    <div class="flex">
+        <div class="box">
+            
+        </div>
+        <div class="box">
+            <ul>
+                <li><a href="#"><img style="margin-top: -6px;" src="data:image/png;base64,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"/></a></li>
+                <li><a href="#">&copy; 2023</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">User agreement</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Copyright Policy</a></li>
+                <li><a href="#">Brand Policy</a></li>
+                <li><a href="#">Guest Controls</a></li>
+                <li><a href="#">Community Guidelines</a></li>
+                <li><a href="#">Language</a></li>
+              </ul>
+        </div>
+    </div>
+
+  </nav>
+
+</body>
+  
