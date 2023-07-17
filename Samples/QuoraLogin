@@ -1,0 +1,237 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  html{
+  	margin: 0;
+    background-image: url(https://images.pexels.com/photos/1269968/pexels-photo-1269968.jpeg?cs=srgb&dl=pexels-steve-johnson-1269968.jpg&fm=jpg);)
+  }
+  
+  body{
+  	margin: 0;
+    font-family: Trebuchet MS;
+  }
+  
+  #container {
+      border-radius: 5px;
+      box-shadow: 1px 1px 17px 0px #00000063;
+      width: 900px;
+      margin: 10% auto 0 auto;
+      background: white;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  #nav {
+      display: flex;
+      justify-content: center;
+      background: #f1f2f2;
+      margin: 0;
+      overflow: hidden;
+    border-top: 1px solid #dee0e1;
+  }
+  
+  #logo{
+    color: white;
+    background-color: skyblue;
+    padding: 20px;
+    margin-left: 20px;
+    display: block;
+    font-size: 20px
+  }
+  ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 0;
+    list-style: none;   
+  }
+  ul>li{
+  	margin-right: 0.04rem;
+  }
+  ul>li>a{
+    text-decoration: none;
+    color: rgb(117, 117, 117);
+    padding-right: 10px;
+    transition: 1s;
+    font-size: 15px;
+    
+  }
+  ul>li>a:hover{
+    color: white;
+    transition: 1s;
+  }
+  
+  #logo_image {
+      width: 200px;
+      margin: -31px 8px -31px 8px;
+  }
+  .logoHeader{
+  	justify-content: center;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .linked-input {
+      padding: 10px;
+      width: 25rem;
+  }
+  
+  .quora-title{
+    font-family: Trebuchet MS;
+    color: #626262;
+    font-size: 20px;
+  }
+
+  .agreement{
+    font-family: Trebuchet MS;
+  }
+  .blue{
+    color: #4c64bb;
+    font-weight: bold;
+  }
+  .submitter {
+    font-size: 15px;
+    color: white;
+    background: #4968ae;
+    width: 100px;
+    padding: 8px;
+    border: none;
+    border-radius: 40px;
+    float: right;
+}
+.flex{
+    display: flex;
+}
+.box{
+    display: block;
+  	justify-content: center;
+}
+.lang{
+    padding: 20px;
+}
+
+   
+.container2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+  
+  .card{
+  	display: block;
+    padding: 32px;
+  }
+  .card:nth-of-type(1){
+  	background: transparent;
+  } 
+  .card:nth-of-type(2){
+  	background: transparent;
+  } 
+  
+.submitterGoogle {
+    font-size: 17px;
+    color: grey;
+    background: transparent;
+    width: 350px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-align: inherit;
+}
+  .googleIcon{
+  	height: 28px; vertical-align: middle; margin-bottom: 4px; margin-right: 12px;
+  }
+  .signup{
+  	color: grey; justify-content: center; display: flex; margin-top: 18px;
+  }
+  .card > b {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  	display: block;
+  }
+  .card > input{
+    display: block;
+    margin-bottom: 20px;
+  }
+</style>
+<body>
+    <section id="container">
+      
+        <div class="logoHeader">
+      		<img id="logo_image" src="https://download.logo.wine/logo/Quora/Quora-Logo.wine.png"/>
+       		<h2 class="quora-title">A Place to share knowledge and know the world better</h2>
+     	</div>
+      	
+      
+      
+      
+      
+<div class="container2">
+
+	<div class="card" style="border-right: 1px solid grey">
+		<small>
+			By continuing you indicate that you agree to <br>
+			Quora’s Terms of Service and Privacy Policy.<br>
+		</small>
+		<br>
+		<button class="submitterGoogle">
+			<img src="https://th.bing.com/th/id/R.55d3560e93ba6e8e604f43b0a089c3c3?rik=ZsCpRaVUmCIpLQ&pid=ImgRaw&r=0" class="googleIcon"/> Continue with Google
+		</button>
+        <hr>
+      	<button class="submitterGoogle">
+			<img src="https://1.bp.blogspot.com/-S8HTBQqmfcs/XN0ACIRD9PI/AAAAAAAAAlo/FLhccuLdMfIFLhocRjWqsr9cVGdTN_8sgCPcBGAYYCw/s1600/f_logo_RGB-Blue_1024.png" class="googleIcon"/> Continue with Facebook
+		</button>
+        <span class="signup">Sign Up With Email</span>
+	</div>
+
+	<div class="card">
+		<h3>Login</h4>
+		<hr>
+		<b>Email</b>
+		<input type="text" placeholder="Your Email" class="linked-input"/>
+		<b>Password</b>
+		<input type="password" placeholder="Password (8+ Charecter)" class="linked-input"/>
+		<span class="agreement">
+			<span class="blue" style="float: left;">Forgot password?</span>
+		</span>
+		<button class="submitter">Login</button>
+	</div>
+</div>
+<br>
+      
+      
+        
+      	<div id="nav">
+          <div class="footer">
+              <div class="box lang">
+                <small>New: العربية, עברית, polski, ગુજરાતી, ಕನ್ನಡ, മലയാളം and తెలుగు</small>
+              </div>
+          </div>
+        </div>
+      
+      
+        <footer id="nav">
+          <div class="footer">
+              <div class="box">
+                  <ul>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Career Opportunities</a></li>
+                      <li><a href="#">Privacy</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Languages</a></li>
+                      <li><a href="#">Press</a></li>
+                      <li><a href="#">&copy; Quora Inc. 2023</a></li>
+                    </ul>
+              </div>
+          </div>
+        </footer>
+      
+    </section>
+  
+  <br><br>
+
+
+</body>
+  
