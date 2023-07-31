@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Page</title>
+    <style>
+        body{
+            font-family: Trebuchet MS;
+            margin: 0;
+            background-image: url(images/background_for_Q2.jpg);
+            background-size: cover;
+        }
+        .signIn{
+
+        }
+        .Register {
+            background-color: #f7ba09;
+            border: none;
+            padding: 7px 20px 7px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: system-ui;
+            border-radius: 3px;
+            height: 36px;
+        }
+        .registerIcon {
+            height: 16px;
+            vertical-align: middle;
+        }
+        .signIn {
+            background-color: transparent;
+            border: 2px solid #f7ba09;
+            color: #f7ba09;
+            padding: 5px 18px 5px 18px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: system-ui;
+            border-radius: 3px;
+            height: 36px;
+        }
+        .userNav{
+            float: right;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+        .navigationBar {
+            background-color: #f7ba09;
+            display: flex;
+            flex-direction: column;
+            width: max-content;
+            height: 100vh;
+            justify-content: flex-start;
+            position: absolute;
+        }
+        .navImg {
+            height: 40px;
+            margin: 8px 10px 6px 10px;
+        }
+        .navImgBottom{
+            position: absolute;
+            bottom: 12px;
+            left: 25px;
+        }
+        .navIcons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+        }
+        .navText {
+            margin: -3px 10px 6px 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .logoBar {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .logo {
+            height: 122px;
+            margin-left: 314px;
+            margin-top: 61px;
+        }
+        .searchContainer {
+            border: 3px solid #f7ba09;
+            border-radius: 50px;
+            overflow: hidden;
+            width: 84rem;
+            margin-left: 320px;
+            margin-top: 30px;
+        }
+        .searchbox {
+            width: 91%;
+            vertical-align: bottom;
+            height: 100%;
+            padding: 20px;
+            border: none;
+            color: #f7ba09;
+            font-size: 20px;
+            background: none;
+            font-weight: bold;
+        }
+        .searchBtn {
+            border-radius: 50%;
+            background: #f7ba09;
+            border: none;
+            height: 52px;
+            width: 52px;
+            overflow: hidden;
+            margin: 5px 15px 1px 18px;
+            position: absolute;
+        }
+        .searchIcon{
+            height: 27px;
+            width: auto;
+        }
+        .highlights {
+            display: flex;
+            margin-left: 111px;
+        }
+        .card {
+            display: flex;
+            width: 22%;
+            background: #640038;
+            padding: 20px;
+            margin: 46px auto;
+            flex-direction: column;
+            border-radius: 8px;
+            box-shadow: -4px 4px 19px 0px #7878784a;
+        }
+        .thumbnail{
+            width: 100%;
+        }
+        .hiTitle{
+            margin-top: 5px;
+            color: white;
+            font-size: 32px;
+        }
+        .tag {
+            position: absolute;
+            color: white;
+            padding: 10px;
+            box-shadow: 1px 2px 9px #00000099;
+        }
+        .tv{
+            background: #e21a8a;
+        }
+        .video{
+            background: #b44aff;
+        }
+        .bottomNav {
+            margin-left: 118px;
+            display: flex;
+            flex-direction: row;
+            /* align-content: center; */
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .topwiki {
+            width: 210px;
+            padding: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 18px;
+            background-color: #f7ba09;
+            color: black;
+            height: 61px;
+            border: none;
+            border-radius: 4px;
+        }
+        .topwikiIcon {
+            height: 26px;
+            vertical-align: middle;
+        }
+        .navigator{
+            list-style: none;
+        }
+        .links > a{
+            text-decoration: none;
+            color: white;
+        }
+        .navTitle{
+            color: white;
+            font-size: 30px;
+            line-height: 3rem;
+        }
+        .main{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .links{
+            line-height: 1.7rem;
+        }
+        .linksCont{
+            padding-right: 45px;
+        }
+        .linksContBorder{
+            border-right: 2px solid bisque;
+        }
+        .moreIcon {
+            width: 50px;
+            padding: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 18px;
+            background-color: #f7ba09;
+            color: black;
+            height: 61px;
+            border: none;
+            border-radius: 4px;
+        }
+        .moreIconImg {
+            height: 26px;
+            vertical-align: middle;
+        }
+        .hr{
+            width: 100%;
+            height: 5px;
+            color: #f9005c;
+        }
+    </style>
+</head>
+<body>
+    <div class="userNav">
+        <button class="signIn">Sign In</button>
+        <button class="Register">
+            <img class="registerIcon" src="images/icons8-user-64.png"/>
+            Register
+        </button>
+    </div>    
+    <nav>
+        <div class="navigationBar">
+            <div class="navIcons"><img class="navImg" src="images/icons8-search-50.png"/></div>
+            <div class="navIcons"><img class="navImg" src="images/console.png"/><span class="navText">Games</span></div>
+            <div class="navIcons"><img class="navImg" src="images/icons8-anime-50.png"/><span class="navText">Anime</span></div>
+            <div class="navIcons"><img class="navImg" src="images/icons8-movie-50.png"/><span class="navText">Movies</span></div>
+            <div class="navIcons"><img class="navImg" src="images/icons8-tv-50.png"/><span class="navText">TV</span></div>
+            <div class="navIcons"><img class="navImg" src="images/icons8-video-50.png"/><span class="navText">Video</span></div>
+            <div class="navIcons"><img class="navImg" src="images/icons8-open-book-50.png"/><span class="navText">WIKIS</span></div>
+            <div class="navIcons"><img class="navImg" src="images/icons8-plus-50.png"/><span class="navText">Star A Wiki</span></div>
+            <div class="navIcons"><img class="navImg navImgBottom" src="images/icons8-user-64.png"/></div>
+        </div>
+    </nav>
+    <div class="main">
+        <section class="logoBar">
+            <img src="images/logo.png" alt="Logo" class="logo"/>
+            <div class="searchContainer">
+                <input placeholder="Search the world's largest fan wiki platform" value="Search the world's largest fan wiki platform" class="searchbox"/>
+                <button class="searchBtn"><img class="searchIcon" src="images/icons8-search-50.png" alt=""></button>
+            </div>
+        </section>
+        <section class="highlights">
+            <div class="card">
+                <img class="thumbnail" src="img/img (1).png" alt=""/>
+                <span class="hiTitle">Indiana Jones Many Adventures Beyond the Movies</span>
+                <span class="tag tv">TV</span>
+            </div>
+            <div class="card">
+                <img src="img/img (1).png" alt=""/>
+                <span class="hiTitle">Honest Trailers | The Da Vinci Code</span>
+                <span class="tag video">VIDEO</span>
+            </div>
+            <div class="card">
+                <img src="img/img (1).png" alt=""/>
+                <span class="hiTitle">Harrison Ford on Embracing Playing Indiana Jones Past His Prime</span>
+                <span class="tag video">VIDEO</span>
+            </div>
+            <div class="card">
+                <img src="img/img (1).png" alt=""/>
+                <span class="hiTitle">Henry Cavill's Final Witcher Run Geralt Evoking a Family Man and Detective</span>
+                <span class="tag tv">TV</span>
+            </div>
+        </section>
+
+        <section class="bottomNav">
+            <button class="topwiki">
+                <img class="topwikiIcon" src="images/icons8-open-book-64.png"/>
+                TOP WIKIS 
+            </button>
+
+            <div class="links linksCont linksContBorder">
+                <ul class="navigator">
+                    <li class="links"><span class="navTitle">Games</span></li>
+                    <li class="links"><a href="#">Terraria</a></li>
+                    <li class="links"><a href="#">Minecraft</a></li>
+                    <li class="links"><a href="#">Genshin Impact</a></li>
+                </ul>
+            </div>
+
+            <div class="links linksCont linksContBorder">
+                <ul class="navigator">
+                    <li class="links"><span class="navTitle">Games</span></li>
+                    <li class="links"><a href="#">Terraria</a></li>
+                    <li class="links"><a href="#">Minecraft</a></li>
+                    <li class="links"><a href="#">Genshin Impact</a></li>
+                </ul>
+            </div>
+
+            <div class="links linksCont linksContBorder">
+                <ul class="navigator">
+                    <li class="links"><span class="navTitle">Games</span></li>
+                    <li class="links"><a href="#">Terraria</a></li>
+                    <li class="links"><a href="#">Minecraft</a></li>
+                    <li class="links"><a href="#">Genshin Impact</a></li>
+                </ul>
+            </div>
+
+            <div class="links linksCont linksContBorder">
+                <ul class="navigator">
+                    <li class="links"><span class="navTitle">Games</span></li>
+                    <li class="links"><a href="#">Terraria</a></li>
+                    <li class="links"><a href="#">Minecraft</a></li>
+                    <li class="links"><a href="#">Genshin Impact</a></li>
+                </ul>
+            </div>
+
+            <div class="links linksCont">
+                <ul class="navigator">
+                    <li class="links">
+                        <span style="color: white;font-size: 30px;">Plus Over <strong>250,000</strong><br>
+                        more to explore</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="links linksCont">
+                <button class="moreIcon">
+                    <img class="moreIconImg" src="images/icons8-right-arrow-50.png"/>
+                </button>
+            </div>
+
+        </section>
+
+        <div class="hr"></div>
+    </div>
+</body>
+</html>
