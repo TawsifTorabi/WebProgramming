@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Number: <input type="text" name="" id="input"/>
+    </br>
+    <button onclick="reverseNum(input.value)">Reverse</button>
+    <br>
+    Output: <span id="output"></span>
+    <script>
+        function reverseNum(num){
+            let length = num.length;
+            let newString = "";
+            for(i=length; i>=1; i--){
+                newString = newString+num[i-1];
+            }
+            output.innerHTML = newString; //document.getElementById('output')
+            
+        }
+    </script>
+</body>
+</html>
